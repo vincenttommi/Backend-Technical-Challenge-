@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts'
+    'accounts',
+    'myapi'
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,7 @@ DATABASES = {
         'USER':'myprojectuser',
         'PASSWORD':'password',
         'HOST':'localhost',
-        'PORT':'5432',
+        'PORT':'5432'
 
     }
 }
