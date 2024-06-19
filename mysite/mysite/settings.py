@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
-    'myapi'
+    'myapi',
+    'django_extensions',
+    'rest_framework'
+
 ]
 
 MIDDLEWARE = [
@@ -78,7 +81,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'backend',
+        'NAME': 'vincent',
         'USER':'myprojectuser',
         'PASSWORD':'password',
         'HOST':'localhost',
