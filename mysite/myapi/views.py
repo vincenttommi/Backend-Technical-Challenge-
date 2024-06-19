@@ -8,12 +8,12 @@ from .models import Customer,Order
 
 
 
-class CustomerViewSet(LoginRequiredMixin, viewsets.ModelviewSet)
+class CustomerViewSet(LoginRequiredMixin, viewsets.ModelviewSet):
     queryset  = Customer.objects.all().order_by('code')
     serializer_class  = CustomerSerializer
 
 
-class OrderViewSet(LoginRequiredMixin,viewsets.ModelViewSet)    
+class OrderViewSet(LoginRequiredMixin,viewsets.ModelViewSet):    
 
     
 # Create your views here.
