@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'myapi',
     'accounts',
     'django_extensions',
-    'rest_framework'
+    'rest_framework',
+    'coverage'
 
 ]
 
