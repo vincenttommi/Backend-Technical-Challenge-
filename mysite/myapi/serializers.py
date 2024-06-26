@@ -28,5 +28,5 @@ def sendsms():
     sms = africastalking.SMS
 
     #using service Sychronously
-    response  =  sms.send("Dear Estemeed customer, new orders are available, kindly check them out", ["+254759209325"])
+    response  =  sms.send("Dear {name} customer, new orders are available, kindly check them out", ["+254759209325"])
     print(response)

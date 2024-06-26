@@ -18,7 +18,7 @@ class TestSmsService(TestCase):
         """
         Test Sending SMS
         """
-        res  = service.send('Test message',['0759209325'])
+        res  = service.send('Test message',['+254759209325'])
         recipients = res['SMSMessageData']['Recipients']
         assert recipients[0]['status'] == 'Success'
         
